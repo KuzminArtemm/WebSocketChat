@@ -21,12 +21,23 @@ app.use(express.static(path.join(process.env.PWD, "public")));
 app.get("/", (req, res) => {
 
   const allMessages = JSON.parse(JSON.stringify(db.chat))
+
+  const options = {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  };
+
+  
   //console.log(allMessages)
   allMessages.forEach(messages => {
     const messageAuthor = db.people.find(el => el.id === messages.personId)
    // console.log(messageAuthor)
     messages.name = messageAuthor.name
     messages.avatar = messageAuthor.avatar
+    messages.date = new Date(
+      messages.date
+    ).toLocaleDateString("ru-RU",  options);
   })
   res.render("main", {allMessages});
 });
