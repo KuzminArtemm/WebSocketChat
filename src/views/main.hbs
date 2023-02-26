@@ -1,0 +1,83 @@
+<h1 class="text-center">WebSocket</h1>
+
+<hr />
+
+<section class="d-flex flex-column align-items-center">
+  <div class="chatWr">
+    <div data-messages class="chat">
+{{#each allMessages}}
+<div class="messageWr d-flex">
+<div>
+  <img class="avatar" src="{{this.avatar}}" alt="avatar">
+</div>
+<div class="dataWr">
+  <div class="messageInfo">
+<span class="messageAuthorName">{{this.name}}</span>
+<span class="messageDate">{{this.date}}</span>
+</div>
+<div>
+<p class="messageText">
+  {{this.text}}
+</p>
+</div>
+</div>
+</div>
+{{/each}}
+</div>
+  </div>
+
+  <div class="input input_1">
+    <div data-signupwr class="d-flex flex-column">
+      <input
+      style="background-color: #eee;"
+        data-name
+        type="text"
+        class="form-control"
+        placeholder="Enter Your Username"
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+      />
+
+      <input
+        data-avatar
+        style="background-color: #eee;"
+        type="text"
+        class="form-control"
+        placeholder="add an avatar..."
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+      />
+      <button
+      style="margin: 0px 60px"
+        data-signup
+        type="button"
+        class="btn btn-outline-secondary"
+      >Enter</button>
+    </div>
+  </div>
+
+  <div>
+    <div class="input input_2">
+      <div data-textwr class="input-group mb-3 my-0.5">
+        <input
+        style="background-color: #eee;"
+          data-text
+          type="text"
+          class="form-control"
+          placeholder="Enter Your Message"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+        <button
+          data-send
+          type="button"
+          class="btn btn-outline-secondary"
+        >Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+</section>

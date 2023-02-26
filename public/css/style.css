@@ -1,0 +1,72 @@
+body {
+  background-color: whitesmoke !important;
+}
+h1 {
+  color: lightslategray !important;
+}
+.chatWr {
+  position: relative;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  overflow-y: scroll;
+  border: 1px solid #777;
+  border-radius: 10px;
+}
+.form-control {
+  border: 1px solid #777 !important;
+}
+.input {
+  width: 400px;
+}
+.input_1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 5px 1px;
+}
+.dataWr {
+  opacity: calc(90%);
+  background-color: #eee;
+  margin: 5px 1px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  word-wrap: break-word;
+
+}
+.messageInfo {
+  
+  font-size: 12px;
+}
+.chatWr {
+  opacity: calc(60%);
+  
+  background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+  background-color: mediumspringgreen;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+}
+
+.connection {
+  
+    text-align: center;
+    margin: 10px 0;
+    font-style: italic;
+}
+.myMessage .dataWr {
+  background-color: #777;
+  color: #eee;
+}
+.chat {
+  filter: blur(3px);
+  transition: all 0.3s ease-in;
+}
